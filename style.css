@@ -1,0 +1,159 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.card{
+    width:100%;
+    max-width:850px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(18px);
+    border-radius:25px;
+    padding:35px;
+    color:white;
+    box-shadow:0 15px 40px rgba(0,0,0,0.35);
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+p{
+    text-align:center;
+    color:#dbeafe;
+    margin-bottom:25px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    outline:none;
+    margin-bottom:18px;
+    font-size:16px;
+    background:white;
+}
+
+textarea{
+    min-height:130px;
+    resize:none;
+}
+
+.row{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+button{
+    flex:1;
+    border:none;
+    border-radius:15px;
+    padding:15px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    color:white;
+    transition:.3s;
+}
+
+#mic{
+    background:#ef4444;
+}
+
+#loc{
+    background:#10b981;
+    width:100%;
+    margin-bottom:20px;
+}
+
+#submit{
+    width:100%;
+    background:#2563eb;
+    margin-top:10px;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+
+#coords{
+    background:rgba(255,255,255,.15);
+    padding:12px;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+#status{
+    background:rgba(0,0,0,.25);
+    padding:15px;
+    border-radius:15px;
+    color:#90EE90;
+    white-space:pre-wrap;
+}
+
+#dashboard{
+    margin-top:20px;
+    background:white;
+    color:#111827;
+    border-radius:18px;
+    padding:20px;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+input[type=file]{
+    background:white;
+    padding:10px;
+}
+
+@media(max-width:768px){
+
+.row{
+flex-direction:column;
+}
+
+h1{
+font-size:32px;
+}
+
+.card{
+padding:20px;
+}
+
+}
